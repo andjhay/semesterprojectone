@@ -1,0 +1,318 @@
+/* VARIABLES */
+
+:root {
+  --custom-purple: #9e578a;
+  --custom-teal: #5f9d9e;
+  --custom-yellow: #ebe2b0;
+  --custom-blue: #81e9eb;
+  --custom-pink: #eb98d3;
+  --custom-light_grey: #95989e;
+}
+
+/* FONTS */
+
+@font-face {
+  font-family: Oswald;
+  src: url("../fonts/Oswald/Oswald-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("../fonts/Roboto/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: Sans;
+  src: url("../fonts/PT_Sans_Narrow/PTSansNarrow-Regular.ttf");
+}
+
+/* STYLE */
+
+body {
+  margin: 0px;
+  display: grid;
+  grid-template-columns: 1fr;
+  height: 100vh;
+}
+
+header {
+  background-color: black;
+  height: 100%;
+  width: 100%;
+}
+
+.content_grid_triple,
+.content_grid_dual,
+.content_grid_single {
+  display: grid;
+  grid-template-columns: 1fr;
+  height: auto;
+}
+
+.grid_card {
+  margin: 10px 20px;
+  border: solid black;
+}
+
+.text_card {
+  padding: 25px;
+}
+
+.form.form {
+  display: inline;
+}
+ 
+p {
+  font-family: Sans;
+  font-size: 20px;
+}
+
+.icon {
+  width: 55px;
+}
+
+.center {
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  font-family: Roboto;
+  font-size: 40px;
+}
+
+h2 {
+  margin: 0px;
+  padding: 25px;
+  font-family: Oswald;
+  font-size: 30px;
+  text-align: center;
+}
+
+.colour_banner_teal,
+.colour_banner_yellow,
+.colour_banner_pink,
+.colour_banner_blue {
+  border-bottom: solid black;
+}
+
+.colour_banner_teal {
+  background-color: var(--custom-teal);
+}
+
+.colour_banner_yellow {
+  background-color: var(--custom-yellow);
+}
+
+.colour_banner_pink {
+  background-color: var(--custom-pink);
+}
+
+.colour_banner_blue {
+  background-color: var(--custom-blue);
+}
+
+.explore_together_img {
+  background: url(../img/museum_exterior.jpg) no-repeat;
+}
+
+.cosmology_img {
+  background: url(../img/telescope.jpg) no-repeat;
+}
+
+.evolution_img {
+  background: url(../img/lab_banner.jpg) no-repeat;
+}
+
+.biology_img {
+  background: url(../img/heart.jpg) no-repeat;
+}
+
+.ai_img {
+  background: url(../img/vr_paint.jpg) no-repeat;
+}
+
+.ecology_img {
+  background: url(../img/mammoth.jpg) no-repeat;
+}
+
+.professor_img {
+  background: url(../img/teacher_science.jpg) no-repeat;
+}
+
+.night_img {
+  background: url(../img/moon_phases.jpg) no-repeat;
+}
+
+.energetica_img {
+  background: url(../img/kinetic_ball.jpg) no-repeat;
+}
+
+.kids_img {
+  background: url(../img/learn.jpg) no-repeat;
+}
+
+.teachers_img {
+  background: url(../img/reading_child.jpg) no-repeat;
+}
+
+.researchers_img {
+  background: url(../img/scientific_chamber.jpg) no-repeat;
+}
+
+.image_banner {
+  height: 240px;
+  width: 100%;
+  border-bottom: solid black;
+  background-size: cover;
+  background-position: center;
+}
+
+.image_banner_fit {
+  height: 240px;
+  width: 100%;
+  background-size: contain;
+  background-position: center;
+  border-bottom: solid black;
+}
+
+.button {
+  padding: 20px;
+}
+
+.contact_button {
+  align-self: end;
+  padding: 10px 30px;
+  background-color: black;
+  border: solid var(--custom-purple) 3px;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+.contact_button:hover {
+  background-color: var(--custom-purple);
+}
+
+/* NAV BAR */
+
+.top_container {
+  text-align: center;
+  height: fit-content;
+}
+
+.logo {
+  width: 120px;
+  margin: 20px 20px;
+}
+
+nav {
+  position: relative;
+  left: 100vw;
+  display: none;
+}
+
+nav ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+nav li {
+  border: solid var(--custom-purple);
+  margin: 10px;
+  text-align: center;
+}
+
+nav li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+  font-family: Oswald;
+  font-size: 20px;
+}
+
+nav li:hover {
+  background-color: var(--custom-purple);
+}
+
+.active_nav_bar {
+  background-color: var(--custom-purple);
+}
+
+.copyright {
+  display: none;
+  color: white;
+  text-align: center;
+  align-self: end;
+  margin-bottom: 20px;
+}
+
+.menu_icon {
+  width: 55px;
+  padding: 15px 3vw;
+}
+
+#menu {
+  display: none;
+}
+
+#menu:checked ~ nav {
+  display: unset;
+  position: unset;
+}
+
+/* NAV BAR END */
+
+/* MEDIA QUERIES */
+
+@media (min-width: 600px) {
+  body {
+    grid-template-columns: 1fr;
+  }
+
+  .logo {
+    margin: 40px;
+  }
+
+  main {
+    margin-left: 250px;
+  }
+
+  header {
+    position: fixed;
+    width: 250px;
+    display: grid;
+    grid-template-rows: 0fr 1fr;
+  }
+
+  h1 {
+    text-align: unset;
+    padding: 72.44px 20px;
+    margin: 0px;
+  }
+
+  nav {
+    display: unset;
+    position: unset;
+  }
+
+  .menu_icon {
+    display: none;
+  }
+
+  .copyright {
+    display: block;
+  }
+}
+
+@media (min-width: 1200px) {
+  .content_grid_dual {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .content_grid_triple {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

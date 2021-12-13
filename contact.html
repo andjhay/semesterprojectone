@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Community Science Museum - Home</title>
+    <meta name="theme-color" content="#1EAAAA" />
+    <meta name="description" content="Homepage of the Community Science Museum, semester project Noroff" />
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <div class="top_container">
+        <label for="menu"><img class="menu_icon" src="img/menu_white_24dp.svg" /></label>
+        <a href="index.html"
+          ><img class="logo" src="img/museum_icon_purple_white.svg" alt="The Museums icon resembling an atom"
+        /></a>
+        <label>
+          <a href="visit.html"><img class="menu_icon" src="img/place_white_24dp.svg" /></a
+        ></label>
+      </div>
+      <input type="checkbox" id="menu" />
+      <nav>
+        <ul>
+          <li class="active_nav_bar"><a href="index.html">Home</a></li>
+          <li><a href="exhibits.html">Exhibits</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="explore.html">Explore</a></li>
+          <li><a href="visit.html">Visit</a></li>
+          <li><a href="get_involved.html">Get Involved</a></li>
+        </ul>
+      </nav>
+      <div class="copyright"><p>Copyright &copy;</p></div>
+    </header>
+    <main>
+      <h1>Contact Us</h1>
+      <div class="content_grid_single">
+        <div class="form">
+          <form action="">
+            <h3>Enter your details</h3>
+            <div>
+              <label for="reason">Contact Regarding</label> <br />
+              <select name="select" id="reason">
+                <option value="blank"></option>
+                <option value="kids">Holiday Club</option>
+                <option value="teacher">Teacher</option>
+                <option value="researcher">Researcher/Internship</option>
+                <option value="tour">Tour Booking</option>
+                <option value="support">Donation</option>
+                <option value="volunteer">Volunteer</option>
+              </select>
+            </div>
+            <div>
+              <label for="name">Full Name</label> <br />
+              <input id="name" type="'text'" />
+            </div>
+            <div>
+              <label for="email">Email</label> <br />
+              <input id="email" type="email" />
+            </div>
+            <div>
+              <label for="message">Message</label> <br />
+              <textarea name="messagebox" id="message" cols="30" rows="10"></textarea>
+            </div>
+
+            <input type="submit" />
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
