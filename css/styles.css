@@ -52,16 +52,13 @@ header {
 .grid_card {
   margin: 10px 20px;
   border: solid black;
+  box-shadow: 2px 2px 8px;
 }
 
 .text_card {
   padding: 25px;
 }
 
-.form.form {
-  display: inline;
-}
- 
 p {
   font-family: Sans;
   font-size: 20px;
@@ -160,20 +157,20 @@ h2 {
   background: url(../img/scientific_chamber.jpg) no-repeat;
 }
 
-.image_banner {
-  height: 240px;
-  width: 100%;
-  border-bottom: solid black;
-  background-size: cover;
-  background-position: center;
-}
-
+.image_banner,
 .image_banner_fit {
   height: 240px;
   width: 100%;
-  background-size: contain;
-  background-position: center;
   border-bottom: solid black;
+  background-position: center;
+}
+
+.image_banner {
+  background-size: cover;
+}
+
+.image_banner_fit {
+  background-size: contain;
 }
 
 .button {
@@ -194,6 +191,62 @@ h2 {
   background-color: var(--custom-purple);
 }
 
+.map {
+  border: solid var(--custom-purple) 5px;
+}
+
+/* FORM */
+
+.form {
+  margin: 10px 20px;
+  font-family: Oswald;
+  font-size: 20px;
+}
+
+h3 {
+  margin-top: 0px;
+}
+
+form div {
+  margin: 20px 0px;
+}
+
+select {
+  height: 36px;
+  width: 100%;
+}
+
+input {
+  height: 30px;
+  width: 98%;
+}
+
+textarea {
+  resize: none;
+  width: 98%;
+  height: 250px;
+  max: 140;
+}
+
+.form_button {
+  font-family: Oswald;
+  font-size: 20px;
+  color: white;
+  background-color: black;
+  height: 60px;
+  border: solid var(--custom-purple) 3px;
+  width: 226px;
+}
+
+.form_button:hover {
+  background-color: var(--custom-purple);
+}
+
+.form_button_container {
+  text-align: center;
+  max-width: 100%;
+}
+
 /* NAV BAR */
 
 .top_container {
@@ -207,8 +260,6 @@ h2 {
 }
 
 nav {
-  position: relative;
-  left: 100vw;
   display: none;
 }
 
@@ -259,10 +310,7 @@ nav li:hover {
 
 #menu:checked ~ nav {
   display: unset;
-  position: unset;
 }
-
-/* NAV BAR END */
 
 /* MEDIA QUERIES */
 
@@ -303,6 +351,16 @@ nav li:hover {
 
   .copyright {
     display: block;
+  }
+
+  select,
+  .form_button_container {
+    max-width: 500px;
+  }
+
+  input,
+  textarea {
+    max-width: 490px;
   }
 }
 

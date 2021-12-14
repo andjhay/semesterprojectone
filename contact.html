@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Community Science Museum - Home</title>
+    <title>Community Science Museum - Contact</title>
+    <link rel="icon" href="img/museum_icon_purple_white.svg" />
     <meta name="theme-color" content="#1EAAAA" />
-    <meta name="description" content="Homepage of the Community Science Museum, semester project Noroff" />
+    <meta name="description" content="Contact form page for requests to the community science museum" />
     <link href="css/styles.css" rel="stylesheet" />
   </head>
   <body>
@@ -23,7 +24,7 @@
       <input type="checkbox" id="menu" />
       <nav>
         <ul>
-          <li class="active_nav_bar"><a href="index.html">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="exhibits.html">Exhibits</a></li>
           <li><a href="events.html">Events</a></li>
           <li><a href="explore.html">Explore</a></li>
@@ -37,12 +38,12 @@
       <h1>Contact Us</h1>
       <div class="content_grid_single">
         <div class="form">
-          <form action="">
+          <form action="contact_msg_sent.html" target="_blank" autocomplete="on">
             <h3>Enter your details</h3>
             <div>
               <label for="reason">Contact Regarding</label> <br />
-              <select name="select" id="reason">
-                <option value="blank"></option>
+              <select required name="select" id="reason">
+                <option value="">Select Option</option>
                 <option value="kids">Holiday Club</option>
                 <option value="teacher">Teacher</option>
                 <option value="researcher">Researcher/Internship</option>
@@ -53,18 +54,25 @@
             </div>
             <div>
               <label for="name">Full Name</label> <br />
-              <input id="name" type="'text'" />
+              <input placeholder="John Doe" required id="name" type="'text'" />
             </div>
             <div>
               <label for="email">Email</label> <br />
-              <input id="email" type="email" />
+              <input placeholder="john@doe.com" required id="email" type="email" />
             </div>
             <div>
               <label for="message">Message</label> <br />
-              <textarea name="messagebox" id="message" cols="30" rows="10"></textarea>
+              <textarea
+                placeholder="Maximum 500 Characters"
+                required
+                maxlength="200"
+                name="messagebox"
+                id="message"
+              ></textarea>
             </div>
-
-            <input type="submit" />
+            <div class="form_button_container">
+              <input class="form_button" type="submit" />
+            </div>
           </form>
         </div>
       </div>
