@@ -37,8 +37,8 @@ body {
 
 header {
   background-color: black;
-  height: 100%;
   width: 100%;
+  height: fit-content;
 }
 
 .content_grid_triple,
@@ -330,6 +330,7 @@ nav li:hover {
   header {
     position: fixed;
     width: 250px;
+    height: 100%;
     display: grid;
     grid-template-rows: 0fr 1fr;
   }
