@@ -53,6 +53,7 @@ header {
   margin: 10px 20px;
   border: solid black;
   box-shadow: 2px 2px 8px;
+  max-width: 1000px;
 }
 
 .text_card {
