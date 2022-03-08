@@ -28,6 +28,10 @@
 
 /* STYLE */
 
+html {
+  background-color: aliceblue;
+}
+
 body {
   margin: 0px;
   display: grid;
