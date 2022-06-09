@@ -1,6 +1,6 @@
-# Semester 1 Cross Course Project - Noroff
+# Semester Project 1 - Noroff
 
-![crosscourseproject](https://user-images.githubusercontent.com/88853764/172799761-5db281a5-dc62-41c9-bea1-5210cdf4eb08.png)
+![semesterprojectone](https://user-images.githubusercontent.com/88853764/172802673-41db660f-9535-405f-aebb-3d2f8ce6c0a1.png)
 
 ## Description
 
